@@ -53,15 +53,31 @@ function Card() {
             imglink: "https://plus.unsplash.com/premium_photo-1674513559454-35ca6435079f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
             name: "Mia Thompson",
             role: "Project Coordinator"
-        }
+        },
+        {
+            imglink: "https://images.unsplash.com/photo-1681993632820-256b2d70e98c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+            name: "Lucas Anderson",
+            role: "Mobile App Developer"
+        },
+        {
+            imglink: "https://images.unsplash.com/photo-1681993632820-256b2d70e98c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+            name: "Lucas Anderson",
+            role: "Mobile App Developer"
+        },
+        {
+            imglink: "https://images.unsplash.com/photo-1681993632820-256b2d70e98c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+            name: "Lucas Anderson",
+            role: "Mobile App Developer"
+        },
+
     ];
 
     return (
         <>
             <HeroTop title={'Our Employees'} dis={'Meet the heart of our company — our employees. With passion, teamwork, and innovation, they turn challenges into achievements every single day.'} />
-            <div className='2xl:container mx-auto w-[90%] text-white flex flex-wrap justify-between  space-y-8'>
-                {employees.map(profile => (
-                    <div className=' w-[23%] rounded-md bg-gray-900 hover:scale-105 duration-500 group pb-2'>
+            <div className='2xl:container mx-auto w-[90%] text-white flex flex-wrap justify-between  space-y-8 my-10'>
+                {employees.map((profile, idx) => (
+                    <div key={idx} className=' w-[23%] rounded-md bg-gray-900 hover:scale-105 duration-500 group pb-2'>
                         <img
                             className='rounded-tl-md rounded-tr-md '
                             src={profile.imglink} alt="" />

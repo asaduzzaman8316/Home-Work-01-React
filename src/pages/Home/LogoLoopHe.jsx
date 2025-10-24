@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import LogoLoop from './LogoLoop';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { ThemControlData } from '../../Context/ThemContext';
 
 const techLogos = [
     { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -23,8 +25,9 @@ const techLogos = [
 // ];
 
 function LogoLoopHe() {
+    const [them] = useContext(ThemControlData)
     return (
-        <div style={{ height: '150px', position: 'relative', overflow: 'hidden' , width:'100%' , color:"white" }}>
+        <div className={`text-${them === "Ligth" ? 'black' : 'white'}`} style={{ height: '150px', position: 'relative', overflow: 'hidden', width: '100%' }}>
             <LogoLoop
                 logos={techLogos}
                 speed={120}
