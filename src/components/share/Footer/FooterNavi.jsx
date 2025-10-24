@@ -4,7 +4,7 @@ import { ThemControlData } from '../../../Context/ThemContext'
 function FooterNavi(props) {
 const [them] = useContext(ThemControlData)
     return (
-        <div className={`flex flex-col gap-5 text-${them === 'Ligth'? 'gray-900': "white"} text-lg font-medium list-none`}>
+        <div className={`flex flex-col gap-5 ${them === 'Ligth'? 'text-black': "text-white"} text-lg font-medium list-none`}>
             <h1 className='pb-2 text-xl font-semibold'>{props.title}</h1>
             {props.navi.map(item => (
                 <div key={crypto.randomUUID()}>

@@ -27,7 +27,7 @@ const techLogos = [
 function LogoLoopHe() {
     const [them] = useContext(ThemControlData)
     return (
-        <div className={`text-${them === "Ligth" ? 'black' : 'white'}`} style={{ height: '150px', position: 'relative', overflow: 'hidden', width: '100%' }}>
+        <div className={`${them === "Ligth" ? 'text-black' : 'text-white'}`} style={{ height: '150px', position: 'relative', overflow: 'hidden', width: '100%' }}>
             <LogoLoop
                 logos={techLogos}
                 speed={120}

@@ -7,7 +7,7 @@ function HeaderNav() {
     return (
         <>
             {navList.map((item, idx) => (
-                <li key={idx} className={`text-xl text-${them === 'Ligth' ? 'black': 'white'} font-semibold cursor-pointer hover:text-red-500 duration-500 `} >{item}</li>
+                <li key={idx} className={`text-xl ${them === 'Ligth' ? 'text-black': 'text-white'}  font-semibold cursor-pointer hover:text-red-500 duration-500 `} >{item}</li>
             ))}
 
         </>

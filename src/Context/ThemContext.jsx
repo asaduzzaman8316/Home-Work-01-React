@@ -10,7 +10,7 @@ function ThemContext(props) {
 
     localStorage.setItem("them", them)
   }, [them])
-  
+
   useEffect(() => {
     if (them === 'Ligth') {
       document.body.classList.add('bg-white')
