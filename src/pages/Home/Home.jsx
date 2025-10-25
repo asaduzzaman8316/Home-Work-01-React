@@ -1,7 +1,7 @@
 
 import Hero from './HomeComponent/Hero/Hero'
 import LogoLoopHe from './LogoLoopHe'
-import Card from './HomeComponent/Course/Card'
+import Card from './HomeComponent/Profile/Card'
 
 function Home() {
     const list = ["Expert in React & Next.js — We build fast, dynamic, and modern web applications.", 'Clean & Responsive Design — Focused on creating smooth, user-friendly interfaces.', ' Performance & Quality — We write efficient, scalable code following best practices.']

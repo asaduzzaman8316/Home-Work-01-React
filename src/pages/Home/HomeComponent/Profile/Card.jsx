@@ -84,7 +84,7 @@ function Card() {
                         <div className='p-2 space-y-3 text-center'>
                             <h1 className='text-lg'>{profile.name}</h1>
                             <p className='text-gray-300'>{profile.role}</p>
-                            <div className='w-full text-center'><Button text={'Profile'} /></div>
+                            <div className='w-full text-center'><Button text={'Visit Profile'} /></div>
                         </div>
                     </div>
                 ))}
